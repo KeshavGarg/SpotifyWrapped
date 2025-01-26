@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="landing_page_button_width">300dp</dimen>
+    <dimen name="settings_spinner_width">300dp</dimen>
+</resources>

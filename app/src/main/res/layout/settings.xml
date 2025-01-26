@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Settings Container -->
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="10dp"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/settings_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/colorSurface"
+                android:orientation="vertical">
+
+                <!-- Theme Selection -->
+                <TextView
+                    android:id="@+id/theme_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Select App Theme" />
+
+                <Spinner
+                    android:id="@+id/select_theme_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:entries="@array/theme_list" />
+
+                <!-- Statistics Settings -->
+                <TextView
+                    android:id="@+id/show_stats_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Show Statistics From:" />
+
+                <Spinner
+                    android:id="@+id/select_timeline_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:entries="@array/timeline_list" />
+
+                <TextView
+                    android:id="@+id/prev_stats_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Show Previous Calculated Stats:" />
+
+                <Spinner
+                    android:id="@+id/prev_stats_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" />
+
+                <!-- Dark Mode Toggle -->
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/dark_mode_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Dark Mode" />
+
+                <!-- Update Settings Button -->
+                <Button
+                    android:id="@+id/update_settings_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/green"
+                    android:text="Update" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_management_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="?attr/colorSurface"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/account_management_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Account Management"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!-- Current Username Display -->
+                <TextView
+                    android:id="@+id/current_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Username: [Username]"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/update_name_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/green"
+                    android:text="Update Name" />
+
+                <Button
+                    android:id="@+id/change_password_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="@color/green"
+                    android:text="Change Password" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/danger_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#d32f2f"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/danger_zone_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danger Zone"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/delete_account_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#b71c1c"
+                    android:text="Delete Account"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Account Management Section -->
+
+    <!-- Danger Zone for Account Deletion -->
+
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:id="@+id/timeline_label"-->
+    <!--    android:layout_width="@dimen/settings_spinner_width"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_gravity="center"-->
+    <!--    android:background="?attr/colorSurface"-->
+    <!--    android:padding="10dp">-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/settings_container"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:background="?attr/colorSurface"-->
+
+    <!--        android:orientation="vertical">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/theme_label"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:text="Select App Theme" />-->
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/select_theme_spinner"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:entries="@array/theme_list" />-->
+
+    <!--        <Space-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="30dp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/show_stats_text"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Show Statistics From:" />-->
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/select_timeline_spinner"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:entries="@array/timeline_list" />-->
+
+    <!--        <Space-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="30dp" />-->
+
+    <!--        <Switch-->
+    <!--            android:id="@+id/dark_mode_switch"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="16dp"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:text="Dark Mode" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/update_settings_button"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:backgroundTint="@color/green"-->
+    <!--                android:text="Update" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+    <!--</LinearLayout>-->
+

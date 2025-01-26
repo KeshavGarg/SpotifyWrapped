@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SpotifyWrappedClone</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="login_fragment_label">Landing Page</string>
+    <string name="get_started_text">Get Started</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="display_app_name">Spotify Wrapped</string>
+    <string name="floating_button">Settings</string>
+    <string-array name="theme_list">
+        <item>Standard Mode</item>
+        <item>Holiday Theme</item>
+    </string-array>
+
+    <string-array name="timeline_list">
+        <item>Past 4 Weeks</item>
+        <item>Past 6 Months</item>
+        <item>Past Year</item>
+    </string-array>
+</resources>
